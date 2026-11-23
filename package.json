@@ -1,7 +1,13 @@
+
 {
   "name": "mein-wald-lehrer",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "dependencies": {"@netlify/blobs":"^11.1.9"}
+  "dependencies": {
+    "@netlify/blobs": "11.1.9"
+  },
+  "overrides": {
+    "@netlify/otel": "7.0.8"
+  }
 }
