@@ -1,0 +1,58 @@
+TESTFAELLE FUER DIE ECHTE KI
+============================
+Nach der Einrichtung diese Sätze als erste freie Antwort testen.
+Vergleiche anschließend, ob die wirklich genannten Merkmale erkennbar sind.
+
+1. „Da sind fünf kleine Bäume, die weit auseinanderstehen. Der Boden ist braun
+   und trocken. Keine Pflanzen auf dem Boden, keine Tiere.“
+   Soll: wenige kleine Bäume, karger brauner Boden, keine Büsche.
+
+2. „Es sind wahnsinnig viele Bäume, einige riesig und einige klein. Zwischen
+   den Bäumen hängen dünne Lianen.“
+   Soll: sehr dichter Bewuchs, Größenunterschiede, Lianen.
+
+3. „Oben ist die Sonne ganz hell, aber unten kommt kaum Licht an. Der Boden
+   ist sehr dunkel und feucht.“
+   Soll: Lichtgefälle, unten dunkel und nass/feucht; keine erfundenen Tiere.
+
+4. „Die Baumstämme sind lila und die Blätter knallrot, breit und gezackt.“
+   Soll: untypische Farben und Blattkanten genau darstellen.
+
+5. „Ein blauer Affe hängt kopfüber an einer dicken Liane.“
+   Soll: ein blauer Affe, Position und Liane.
+
+6. „Ich sehe einen Tiger, vier gelbe Vögel und eine rote Schlange.“
+   Soll: auch biologisch untypische Tiere, Anzahl und Farben.
+
+7. „Da hängen ganz lange Äste von den Bäumen herunter. Keine Lianen.“
+   Soll: hängende Äste, ausdrücklich keine Lianen.
+
+8. „Man sieht fast nur riesige Blätter über sich. Der Himmel ist verdeckt.“
+   Soll: Perspektive nach oben, große Blätter, wenig Himmel.
+
+9. „Der Wald ist komplett kahl, kein grüner Boden, nur Sand. Ein Baum hat
+   keine Blätter.“
+   Soll: sandiger Boden, kahler Baum, nicht automatisch Bodengrün ergänzen.
+
+10. „Ein See mit rosa Wasser liegt hinter drei umgefallenen Bäumen.“
+    Soll: ungewöhnliche Wasserfarbe und räumliche Anordnung.
+
+11. „Überall ist Nebel. Ich sehe nur zwei Bäume ganz nah und hinten nichts.“
+    Soll: Sichtweite kurz, nur zwei Bäume.
+
+12. „Es gibt überhaupt keine Tiere. Aber ich höre Vögel zwitschern.“
+    Soll: keine sichtbaren Vögel.
+
+13. „Ein sehr großer Baum hat unten dicke Wurzeln, die wie Mauern aussehen.“
+    Soll: sichtbare breite Brettwurzeln, nicht nur Standardstamm.
+
+14. „Ich sehe einen dicken schwarzen Baum mit weißen Punkten, einen kleinen
+    gelben Busch und zwei blaue Käfer am Boden.“
+    Soll: Farben/Muster sind dem jeweiligen Objekt zugeordnet.
+
+15. „Die Blätter sind zuerst grün ... ach nein, ich meine blau. Die Äste
+    sind dunkelbraun.“
+    Soll: korrigierte spätere Farbe Blau, Äste braun.
+
+WICHTIG: Bildmodelle können auch nach gutem Prompting Fehler machen.
+Die Liste ist ein Testplan, keine Garantie für perfekte Darstellung.
