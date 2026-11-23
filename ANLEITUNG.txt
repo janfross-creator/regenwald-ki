@@ -1,0 +1,88 @@
+MEIN WALD - LEHRERGALERIE (KOSTENLOSE VERSION)
+=================================================
+
+VORAUSSETZUNGEN
+- Dein bisheriges Netlify-Projekt mit Verbindung zu GitHub.
+- Netlify-Free-Plan, keine kostenpflichtige KI-API.
+- Dein vorhandener KLASSEN_CODE bleibt bestehen.
+- Ein zusätzliches starkes, geheimes LEHRER_PASSWORT in Netlify.
+
+A) DATEIEN IM VORHANDENEN GITHUB-PROJEKT AUSTAUSCHEN
+
+Die ZIP-Datei dient als Paket. Nicht die ZIP-Datei selbst bei GitHub hochladen.
+Im Projekt janfross-creator/regenwald-ki müssen folgende Dateien liegen:
+
+  public/index.html                  (bisherige Schülerseite ERSETZEN)
+  public/lehrer.html                 (NEU)
+  netlify/functions/galerie.mjs      (NEU)
+  package.json                       (NEU im Hauptverzeichnis)
+  netlify.toml                       (im Hauptverzeichnis ERSETZEN)
+
+Die alten Dateien next.mjs, plan.mjs, image.mjs, transcribe.mjs werden
+von dieser neuen Seite nicht mehr benutzt. Sie können zunächst bestehen bleiben.
+
+In der GitHub-Oberfläche lassen sich Dateien mit "Add file" >
+"Create new file" und Eingabe eines Pfads wie
+"netlify/functions/galerie.mjs" anlegen. Bei bestehenden Dateien
+zum Ersetzen auf die Datei und auf das Stiftsymbol klicken.
+
+Nach "Commit changes" veröffentlicht Netlify die Änderungen normalerweise
+automatisch.
+
+B) ZUGANG ANLEGEN
+
+Netlify > Manage > Keys and secrets > Add a key:
+   Name: LEHRER_PASSWORT
+   Value for the live app: ein STARKES, nur dir bekanntes Passwort
+   Contains secret values: aktiv
+   Scopes: Functions aktiv
+
+Die Variable KLASSEN_CODE sollte bereits vorhanden sein.
+OPENAI_API_KEY wird NICHT gebraucht. Keine Zahlungsdaten eingeben.
+
+Anschließend in Netlify eine neue Veröffentlichung auslösen,
+damit die neuen Variablen zuverlässig in den Funktionen verfügbar sind.
+
+C) SO RUFST DU DIE SEITEN AUF
+
+Schülerseite: https://regenwald-ki.netlify.app/
+Lehrerübersicht: https://regenwald-ki.netlify.app/lehrer.html
+
+In Netlify muss die Webseite so freigegeben sein, dass die Schüler sie
+öffnen können. Die Lehrerseite ist separat mit LEHRER_PASSWORT geschützt;
+der Link allein reicht nicht zum Abrufen von Ergebnissen.
+
+D) ABLAUF IM UNTERRICHT
+
+1. Schülerinnen/Schüler öffnen die Schülerseite per QR-Code.
+2. Sie geben den KLASSEN_CODE und einen neutralen Bildnamen ein,
+   z.B. "Bild 12" (keine Klarnamen notwendig).
+3. Sie beantworten eine bis maximal drei Fragen und erstellen das Bild.
+4. Das Bild wird automatisch bei der Lehrkraft eingereicht.
+   Bei einem Fehler kann "Erneut an die Lehrkraft senden" gewählt werden.
+5. Lehrkraft öffnet /lehrer.html, gibt das LEHRER_PASSWORT ein,
+   klickt auf eine Miniatur für Großansicht, oder wählt "Zwei vergleichen"
+   und anschließend zwei Bilder für die Splitscreen-Ansicht.
+6. Bei Bedarf auf "Aktualisieren" klicken. Einzelne Bilder lassen
+   sich in der Einzelansicht löschen.
+
+E) TECHNIK UND DATENSCHUTZ
+
+- Zeichnungen werden als Bilddateien in Netlify Blobs gespeichert.
+- Der Klassen-Code ermöglicht das Einreichen, NICHT das Lesen der Galerie.
+- Die Lehrerübersicht wird serverseitig durch das Lehrerpasswort geschützt.
+- Die gesprochenen Texte werden für die Galerie NICHT gespeichert; nur
+  Bildname, Bild und Zeit der Einreichung.
+- Browser-Spracherkennung kann Audiodaten an externe Dienste übertragen.
+  Für den Unterricht müssen die Schul-/Datenschutzvorgaben geprüft werden.
+- Zeichnung ist weiterhin ein regelbasierter Generator ohne generative KI.
+  Für besonders ungewöhnliche Inhalte sind Grenzen zu erwarten.
+- Netlify ist nur innerhalb der Freiplan-Kontingente kostenfrei.
+- Bilder bleiben gespeichert, bis du sie löschst. Eine Freigabe der
+  Veröffentlichung für die ganze Klasse muss vorher schulrechtlich geklärt werden.
+
+F) TEST
+
+Erst mit zwei Testbildern probieren, bevor die ganze Klasse startet.
+Die grafische Oberfläche wurde lokal mit Testdaten geprüft; eine echte
+Netlify-Live-Einreichung muss nach dem Veröffentlichen noch getestet werden.
