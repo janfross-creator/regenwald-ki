@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#234e39">
 <title>Mein Wald - Traumreise</title>
+<!-- Version 4: Kostenloser Szenengenerator, November 2026. Lehrer-Galerie unverändert. -->
 <style>
 :root{color-scheme:light;--forest:#21513c;--forest2:#327554;--ink:#1e3028;--soft:#54695b;--page:#edf3ec;--edge:#cadbd0;--cream:#fffefa;--light:#f0f7ed;--focus:#b66e16}
 *{box-sizing:border-box}html{font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:19px;-webkit-text-size-adjust:100%}body{margin:0;background:var(--page);color:var(--ink);line-height:1.45}button,textarea{font:inherit}button{cursor:pointer;touch-action:manipulation}button:focus-visible,textarea:focus-visible{outline:4px solid var(--focus);outline-offset:3px}button:disabled{opacity:.45;cursor:not-allowed}
 .wrapper{max-width:1460px;padding:20px;margin:auto}.topbar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:17px}.identity{display:flex;align-items:center;gap:13px}.logo{background:#d9eada;width:58px;height:58px;border-radius:17px;display:grid;place-items:center}.logo svg{width:43px;height:43px}.topbar h1{font-size:1.55rem;line-height:1.1;margin:0;letter-spacing:-.025em}.topbar p{font-size:.98rem;margin:3px 0 0;color:var(--soft)}.pill{background:#fff;border:1px solid var(--edge);border-radius:40px;padding:10px 16px;font-size:.89rem;font-weight:700;white-space:nowrap}
-.layout{display:grid;grid-template-columns:minmax(360px,440px) minmax(0,1fr);gap:18px}.panel{background:var(--cream);border:2px solid var(--edge);border-radius:25px;box-shadow:0 8px 26px rgba(30,66,46,.06);padding:25px;min-width:0}.left{display:flex;flex-direction:column;min-height:640px}.step{font-size:.88rem;color:var(--forest2);font-weight:750;margin-bottom:15px}.question{font-size:clamp(1.45rem,2.15vw,1.95rem);line-height:1.23;margin:0 0 11px;letter-spacing:-.025em}.intro{color:var(--soft);font-size:1.02rem;margin:0 0 18px}.answerTitle{font-weight:750;margin:0 0 7px}.answer{display:block;width:100%;min-height:195px;resize:vertical;padding:16px 17px;color:#192e23;background:#fff;border:2px solid #9cb7a3;border-radius:17px;font-size:1.08rem;line-height:1.5}.answer::placeholder{color:#637b6a}.actions{margin-top:14px;display:grid;gap:10px}.button{border:2px solid transparent;border-radius:16px;padding:11px 14px;min-height:59px;font-weight:750;display:flex;align-items:center;justify-content:center;gap:11px;font-size:1.04rem}.button svg{width:27px;height:27px;flex:none}.button.main{background:var(--forest);color:#fff}.button.main:hover{background:#143c2b}.button.voice{background:#e5f0e7;border-color:#9cbca6;color:var(--forest);min-height:70px}.button.voice.active{background:#b74337;border-color:#b74337;color:#fff}.button.sub{background:#fff;border-color:#b8cdbd;color:var(--forest)}.button.ghost{background:transparent;color:#315b43;min-height:47px;font-size:.96rem}.button.block{width:100%}.inlineBtns{display:grid;grid-template-columns:1fr 1fr;gap:9px}.feedback{font-size:.91rem;color:#486554;min-height:27px;margin:11px 0}.feedback.error{color:#a6402c}.bottomActions{margin-top:auto;padding-top:12px}.bottomActions .button{width:100%}
+.layout{display:grid;grid-template-columns:minmax(360px,440px) minmax(0,1fr);gap:18px}.panel{background:var(--cream);border:2px solid var(--edge);border-radius:25px;box-shadow:0 8px 26px rgba(30,66,46,.06);padding:25px;min-width:0}.left{display:flex;flex-direction:column;min-height:640px}.step{font-size:.88rem;color:var(--forest2);font-weight:750;margin-bottom:15px}.question{font-size:clamp(1.45rem,2.15vw,1.95rem);line-height:1.23;margin:0 0 11px;letter-spacing:-.025em}.intro{color:var(--soft);font-size:1.02rem;margin:0 0 18px}.answerTitle{font-weight:750;margin:0 0 7px}.answer{display:block;width:100%;min-height:230px;resize:vertical;padding:16px 17px;color:#192e23;background:#fff;border:2px solid #9cb7a3;border-radius:17px;font-size:1.08rem;line-height:1.5}.answer::placeholder{color:#637b6a}.actions{margin-top:14px;display:grid;gap:10px}.button{border:2px solid transparent;border-radius:16px;padding:11px 14px;min-height:59px;font-weight:750;display:flex;align-items:center;justify-content:center;gap:11px;font-size:1.04rem}.button svg{width:27px;height:27px;flex:none}.button.main{background:var(--forest);color:#fff}.button.main:hover{background:#143c2b}.button.voice{background:#e5f0e7;border-color:#9cbca6;color:var(--forest);min-height:70px}.button.voice.active{background:#b74337;border-color:#b74337;color:#fff}.button.sub{background:#fff;border-color:#b8cdbd;color:var(--forest)}.button.ghost{background:transparent;color:#315b43;min-height:47px;font-size:.96rem}.button.block{width:100%}.inlineBtns{display:grid;grid-template-columns:1fr 1fr;gap:9px}.feedback{font-size:.91rem;color:#486554;min-height:27px;margin:11px 0}.feedback.error{color:#a6402c}.bottomActions{margin-top:auto;padding-top:12px}.bottomActions .button{width:100%}
 .right{padding:18px;display:flex;flex-direction:column;gap:13px}.sceneTop{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:0 3px}.sceneTop h2{font-size:1.29rem;letter-spacing:-.025em;margin:0}.sceneTop span{font-size:.83rem;color:var(--soft)}.stage{background:#f2f6eb;border:1px solid #cfddc8;border-radius:19px;position:relative;overflow:hidden;aspect-ratio:1200/720;min-height:370px;display:grid;place-items:center}.stage svg{display:block;width:100%;height:auto}.empty{text-align:center;max-width:440px;padding:28px}.empty svg{width:112px;height:112px;margin-bottom:13px}.empty h3{font-size:1.34rem;margin:0 0 8px}.empty p{margin:0;color:var(--soft)}.foot{font-size:.86rem;color:#54665a;padding:0 4px;margin:0}.details{background:#f1f7ef;border:1px solid #cfdfcf;border-radius:15px;padding:12px 16px;line-height:1.5}.details summary{cursor:pointer;font-weight:700}.details p{margin:8px 0 0;font-size:.93rem}.note{background:#fff7e7;border:1px solid #e5cba1;border-radius:13px;padding:10px 13px;font-size:.91rem;margin:0}.hide{display:none!important}.small{font-size:.88rem;color:var(--soft)}.sceneBtns{display:flex;gap:10px;flex-wrap:wrap}.sceneBtns .button{min-width:190px}.doneHead{font-size:1.5rem;margin:5px 0 6px;line-height:1.2}.loader{height:46px;width:46px;margin:0 auto 17px;border:5px solid #c6ddc9;border-top-color:#276747;border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
 @media(max-width:1050px){.layout{grid-template-columns:minmax(330px,42%) minmax(0,1fr)}.wrapper{padding:14px}.panel{padding:19px}.stage{min-height:295px}.answer{min-height:165px}.question{font-size:1.55rem}}
 @media(max-width:760px){.layout{grid-template-columns:1fr}.left{min-height:auto}.stage{min-height:230px}.panel{padding:18px}.topbar{margin-bottom:13px}.pill{display:none}.answer{min-height:130px}.right{gap:10px}}
@@ -32,7 +33,7 @@
 <main class="layout">
 <section class="panel left" aria-label="Beschreibe deinen Wald">
 <div class="classInfo"><div><label for="classCode">Klassencode</label><input id="classCode" type="text" autocomplete="off" placeholder="Code von deiner Lehrkraft" maxlength="70"></div><div><label for="imageName">Bildname</label><input id="imageName" type="text" autocomplete="off" maxlength="28" placeholder="z. B. Bild 12"></div><p>Dein fertiges Bild wird automatisch an deine Lehrkraft gesendet. Verwende statt deines Namens einen Bildnamen.</p></div>
-<div id="questionArea"><div class="step" id="step">Frage 1 von höchstens 3</div><h2 class="question" id="question">Beschreibe möglichst genau, wie der Wald in deiner Vorstellung aussieht.</h2><p class="intro" id="intro">Erzähle alles, woran du dich erinnerst. Du musst keine Fachbegriffe kennen.</p><label class="answerTitle" for="answer">Deine Beschreibung</label><textarea class="answer" id="answer" placeholder="Sprich ins Mikrofon oder schreibe deine Beschreibung hier auf."  spellcheck="true"></textarea><div class="actions"><button class="button voice" id="voice" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" aria-hidden="true"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5m-4 0h8"/></svg><span id="voiceText">Sprechen</span></button><div class="inlineBtns"><button class="button main" id="continue" type="button">Antwort übernehmen</button><button class="button sub" id="finish" type="button">Bild jetzt zeichnen</button></div><button class="button ghost hide" id="skip" type="button">Ich weiß dazu nichts</button></div><p id="feedback" class="feedback" role="status" aria-live="polite"></p></div>
+<div id="questionArea"><div class="step" id="step">Frage 1 von höchstens 3</div><h2 class="question" id="question">Beschreibe möglichst genau, wie der Wald in deiner Vorstellung aussieht.</h2><p class="intro" id="intro">Erzähle frei. Auch lange Beschreibungen und kleine Pausen sind in Ordnung.</p><label class="answerTitle" for="answer">Deine Beschreibung</label><textarea class="answer" id="answer" placeholder="Sprich ins Mikrofon oder schreibe deine Beschreibung hier auf."  spellcheck="true"></textarea><div class="actions"><button class="button voice" id="voice" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.2" aria-hidden="true"><rect x="9" y="2" width="6" height="13" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5m-4 0h8"/></svg><span id="voiceText">Sprechen</span></button><div class="inlineBtns"><button class="button main" id="continue" type="button">Antwort übernehmen</button><button class="button sub" id="finish" type="button">Bild jetzt zeichnen</button></div><button class="button ghost hide" id="skip" type="button">Ich weiß dazu nichts</button></div><p id="feedback" class="feedback" role="status" aria-live="polite"></p></div>
 <div id="doneArea" class="hide"><h2 class="doneHead">Dein Wald ist fertig.</h2><p>Schau dir die Zeichnung an: Welche Einzelheiten aus deiner Vorstellung erkennst du?</p><div class="submitStatus" id="submitStatus" role="status" aria-live="polite">Bild wird vorbereitet ...</div><button class="button sub block" id="retrySubmit" type="button" style="margin-bottom:10px">Erneut an die Lehrkraft senden</button><button class="button main block" id="restart" type="button">Neuen Wald beschreiben</button></div>
 <div class="bottomActions"><button class="button ghost" id="readQuestion" type="button">Frage vorlesen</button></div>
 </section>
@@ -94,10 +95,14 @@ const animals=[
  ['rabbit',/\b(?:hasen?|kaninchen)\b/gi],['bat',/\b(?:flederm[aä]use?)\b/gi],['kangaroo',/\b(?:k[aä]ngurus?)\b/gi],
  ['other',/\b(?:tapire?|wildschweine?|m[aä]use?|ratten?|schnecken?|w[uü]rmer|krabben?|krebse?|menschen?|kinder|monster)\b/gi]
 ];
-function normalize(input){return String(input||'').toLocaleLowerCase('de-DE')
- .replace(/[\u2019]/g,"'").replace(/\b(?:[aä]h+m+|[aä]h+|[öo]h+m+|h+m+|[äa]hm|sozusagen|quasi)\b[\s,]*/g,' ')
- .replace(/\b(?:ja also|also ja|wie soll ich sagen|ich sag mal|keine ahnung)\b/gi,' ')
- .replace(/\b(da sind|da ist|ich sehe|es gibt)(?:\s+\1)+\b/g,'$1').replace(/\s+/g,' ').trim()};
+function normalize(input){
+ return String(input||'').toLocaleLowerCase('de-DE')
+ .replace(/[äöüß]/g,c=>({ä:'a',ö:'o',ü:'u',ß:'s'}[c]))
+ .replace(/[„“”]/g,'"').replace(/[\u2019]/g,"'")
+ .replace(/\b(?:a+h+m+|a+h+|o+h+m+|h+m+|hm+|ehm+|ah|also|sozusagen|quasi|irgendwie|so halt|ich sag mal|sag ich mal|wie soll ich sagen)\b/gi,' ')
+ .replace(/\b(?:ja und dann|ja genau|und dann halt|und ja|und ah|na ja)\b/gi,' ')
+ .replace(/\s+/g,' ').trim();
+}
 function locate(s){let all=[];for(let [kind,re] of defs)for(let m of s.matchAll(re))all.push({kind,idx:m.index,end:m.index+m[0].length,word:m[0]});for(let [kind,re] of animals)for(let m of s.matchAll(re))all.push({kind:'animal:'+kind,idx:m.index,end:m.index+m[0].length,word:m[0]});return all.sort((a,b)=>a.idx-b.idx||b.end-a.end)}
 function scope(s,m,all){const i=m.idx,j=m.end;let st=Math.max(s.lastIndexOf('.',i-1),s.lastIndexOf('!',i-1),s.lastIndexOf('?',i-1),s.lastIndexOf(';',i-1),s.lastIndexOf('\n',i-1))+1;let ed=s.length;for(let ch of '.!?;\n'){let ix=s.indexOf(ch,j);if(ix>=0)ed=Math.min(ed,ix)}const before=all.filter(a=>a.end<=i&&a.idx>=st).pop();const after=all.find(a=>a.idx>=j&&a.idx<ed);
  let left=s.slice(Math.max(st,before?before.end:st),i).slice(-150),right=s.slice(j,Math.min(ed,after?after.idx:ed)).slice(0,130);
@@ -115,52 +120,134 @@ function qty(v,defaultCount=1,max=32){if(negated(v))return 0;let left=v.left.sli
  return Math.min(defaultCount,max)}
 function color(v,fallback){let finds=[];for(let [re,hex] of colorRegexes){re.lastIndex=0;for(let m of v.left.matchAll(re)){finds.push({dist:v.left.length-(m.index+m[0].length),hex,side:'l'})}re.lastIndex=0;for(let m of v.right.matchAll(re)){finds.push({dist:m.index+9,hex,side:'r'})}}
  finds.sort((a,b)=>a.dist-b.dist);return finds[0]?.dist<75?finds[0].hex:fallback}
-function dimension(v,def=1){let t=v.near;if(/\b(?:riesig|gigantisch|gewaltig|riesen|sehr gro[sß]|sehr hoch|haushoch|meterhoch)/.test(t))return 1.42;if(/\b(?:winzig|klein|niedrig|kurz|mini)/.test(t))return .68;if(/\b(?:gro[sß]|hoch|breit|dick|lang)/.test(t))return 1.19;return def}
+function dimension(v,def=1){let t=v.near;
+ if(/\b(?:riesig\w*|gigantisch\w*|gewaltig\w*|riesen\w*|sehr gro[sß]\w*|sehr hoch\w*|haushoch\w*|meterhoch\w*)/.test(t))return 1.40;
+ if(/\b(?:winzig\w*|klein\w*|niedrig\w*|kurz\w*|mini)\b/.test(t)||/\bklein\w*/.test(t))return .68;
+ if(/\b(?:gro[sß]\w*|hoch\w*|breit\w*|dick\w*|lang\w*)/.test(t))return 1.20;
+ return def}
 function position(v){let a=v.near+' '+v.entire.slice(0,40),top=/\b(?:oben|[uü]ber mir|[uü]berm kopf|[uü]ber den b[aä]umen|baumkronen?|kronendach|himmel|hoch oben|auf (?:einem|dem) ast|[aä]ste|auf dem baum|zwischen den baumkronen)\b/.test(a),ground=/\b(?:unten|boden|waldboden|auf der erde|am boden|unter den b[aä]umen)\b/.test(a);return {top,ground,back:/\b(?:hinten|hintergrund|ferne)\b/.test(a),left:/\blinks\b/.test(v.near),right:/\brechts\b/.test(v.near),water:/\b(?:im fluss|im see|wasser)\b/.test(a)}}
 function leafShape(v){return /\b(?:spitz|gezackt|gez[aä]hnt|nadelf[oö]rmig)\b/.test(v.near)?'point':/\bherzf[oö]rmig\b/.test(v.near)?'heart':/\b(?:breit|riesig|regenschirm)\b/.test(v.near)?'wide':/\b(?:lang|l[aä]nglich|schmal)\b/.test(v.near)?'long':'normal'}
-function treeSize(v){let txt=v.near;if(/gro[sß].{0,18}(?:und|oder).{0,12}klein|klein.{0,18}(?:und|oder).{0,12}gro[sß]|verschieden(?:e|en)? (?:h[oö]hen|gr[oö][sß]en)|unterschiedlich (?:gro[sß]|hoch)|unterschiedlich hoch/.test(txt))return 'mixed';if(/\b(?:riesig|gigantisch|gewaltig|riesen|sehr hoch|sehr gro[sß]|haushoch)\b/.test(txt))return 'giant';if(/\b(?:klein|niedrig|winzig|jung)\b/.test(txt))return 'small';if(/\b(?:hoch|gro[sß]|lang)\b/.test(txt))return 'tall';return 'normal'}
-function parse(raw){let s=normalize(raw),all=locate(s),o={text:s,trees:[],animals:[],features:[],canopy:{density:'normal',color:'#4b9449',shape:'normal',oversized:false},ground:{color:null,explicitColor:false,wet:'normal',bare:false,litter:false},light:{top:'normal',bottom:'normal'},weather:[],coverage:{},warnings:[]};
-const by=kind=>all.filter(a=>a.kind===kind);const sceneForest=/\b(?:regenwald|wald|dschungel|urwald|waldlandschaft)\b/.test(s);const treems=by('tree');
- for(let m of treems){let v=scope(s,m,all);if(negated(v))continue;let height=treeSize(v);let type=/\bpalme|palmen/.test(m.word)?'palm':/\b(?:tanne|fichte|kiefer|nadelbaum)/.test(m.word)?'pine':'broad';o.trees.push({count:qty(v,5,36),height,type,trunk:color(v,'#95765e'),pos:position(v)})}
- if(!treems.length&&sceneForest){let b=s.match(/(?:sehr|extrem|total|ganz)\s+dicht|dichter|dichten|undurchdringlich|zugewuchert|unz[aä]hlige|sehr viele/);let scant=/\b(?:licht|offen|kahl|wenige|ein paar|vereinzelt)\b/.test(s);o.trees.push({count:b?25:scant?5:12,height:'mixed',type:'broad',trunk:'#8b765e',pos:{}})}
- // Ein positives "keine Bäume" entfernt nur Bäume, sofern keine spätere konkrete Baumgruppe dazukommt.
- if(/\b(?:keine|ohne|gar keine) (?:b[aä]ume|bäume|palmen|b[aä]umchen)\b/.test(s)&&!o.trees.some(t=>t.count>0&&treems.some(m=>!negated(scope(s,m,all)))))o.trees=[];
- if(/\b(?:dicht(?:er|en|es)?|zugewuchert|undurchdringlich|sehr viele|ganz viele|voller b[aä]ume)\b/.test(s))o.canopy.density='dense';
- for(let m of by('leaf')){let v=scope(s,m,all);if(negated(v))continue;let hue=color(v,null);if(hue)o.canopy.color=hue;o.canopy.shape=leafShape(v);if(/\b(?:riesig|gro[sß]|breit|regenschirm)/.test(v.near))o.canopy.oversized=true;
- if(/\b(?:oben|[uü]ber mir|[uü]berm kopf|herunter|runter|h[aä]ng|dach)\b/.test(v.near)||o.canopy.oversized){o.features.push({kind:'leaf',count:qty(v,5,15),size:dimension(v,1.1),color:hue||o.canopy.color,shape:leafShape(v),pos:position(v)})}}
- // Objekte werden nach Art gemeinsam begrenzt; keine festen Büsche etc. hinzuerfinden.
- const featureTypes=['vine','branch','fern','shrub','flower','grass','moss','mushroom','plant','roots','stone','wood','water','waterfall'];
- for(let kind of featureTypes)for(let m of by(kind)){let v=scope(s,m,all);if(negated(v))continue;let t={kind,count:qty(v,kind==='waterfall'?1:kind==='water'?1:kind==='wood'?1:kind==='branch'?3:kind==='vine'?4:kind==='roots'?3:5,25),size:dimension(v,1),color:color({left:v.left.slice(-38),right:v.right.slice(0,17)},null),shape:leafShape(v),pos:position(v),hanging:/\b(?:h[aä]ng(?:en|t)?|herunter|runter|herab|von oben|baumkrone)\b/.test(v.near),word:m.word};o.features.push(t)}
- // Keine Lianen aus rein hängenden Ästen ableiten. Nur wörtliche Pflanzen-Seile werden als Kletterpflanzen verstanden.
- if(!o.features.some(x=>x.kind==='vine')&&/\b(?:lange pflanzen wie seile|pflanzen wie seile|schlingende pflanzen|gr[uü]ne seile|gr[uü]nes zeug h[aä]ngt|pflanzen h[aä]ngen herunter)\b/.test(s))o.features.push({kind:'vine',count:3,size:1,color:null,pos:{top:true},hanging:true});
- const groundM=by('ground');for(let m of groundM){let v=scope(s,m,all);let c=color({left:v.left.slice(-27),right:v.right.slice(0,30)},null);if(c){o.ground.color=c;o.ground.explicitColor=true}if(/\b(?:matschig|schlammig|nass|[uü]berschwemmt|klatschnass)\b/.test(v.near))o.ground.wet='wet';else if(/\b(?:feucht|klamm)\b/.test(v.near))o.ground.wet='damp';else if(/\b(?:trocken|staubig|ausgetrocknet)\b/.test(v.near))o.ground.wet='dry';}
- // "Der Boden ist braun" und "unten brauner Boden"; Bodenfarbe vor anderen Farben schützen.
- const groundColor=s.match(/\b(?:boden|waldboden|erde|untergrund)\s+(?:ist|war|sieht|erscheint|wirkt|besteht aus)?\s*(?:so|eher|ganz|sehr|ziemlich)?\s*(dunkelgr[uü]n|hellgr[uü]n|dunkelbraun|hellbraun|rotbraun|braun|gr[uü]n|grau|schwarz|wei[sß]|beige|rot)\b/);
- if(groundColor){let c=colorDefs.find(([r])=>new RegExp('^'+r+'$').test(groundColor[1]));if(c){o.ground.color=c[1];o.ground.explicitColor=true}}
- const groundNeg=/\b(?:boden|waldboden).{0,75}\b(?:keine pflanzen|kein gras|keine b[uü]sche|nichts w[aä]chst|komplett kahl|unbewachsen)\b|\b(?:keine pflanzen|kein gras|keine b[uü]sche).{0,50}\b(?:am|auf dem) boden\b/.test(s);
- o.ground.bare=groundNeg;if(groundNeg)o.features=o.features.filter(f=>!['shrub','plant','fern','grass','moss','flower'].includes(f.kind));
- o.ground.litter=/\b(?:laubboden|heruntergefallene bl[aä]tter|abgestorbene bl[aä]tter|bl[aä]tter (?:liegen|auf dem boden)|laub (?:liegt|am boden)|voller laub)\b/.test(s);
- if(o.ground.litter) o.features=o.features.filter(f=>f.kind!=='leaf'||!f.pos.ground);
- if(/\b(?:feuchter|nasser|matschiger|trockener|schlammiger) (?:wald)?boden\b/.test(s)){let m=s.match(/\b(feuchter|nasser|matschiger|trockener|schlammiger) (?:wald)?boden\b/);o.ground.wet=/trockener/.test(m[1])?'dry':/feuchter/.test(m[1])?'damp':'wet'}
- // Beleuchtung und Wetter getrennt von der Farbe des Bodens beurteilen.
- if(/\b(?:oben|ganz oben|[uü]ber den b[aä]umen|baumkronen|kronendach).{0,65}\b(?:hell|sonnig|sonne|viel licht)\b|\b(?:hell|sonnig|sonne).{0,55}\b(?:oben|baumkronen)\b/.test(s))o.light.top='bright';
- if(/\b(?:unten|am boden|waldboden|unter den b[aä]umen|unten am boden).{0,95}\b(?:dunkel|schattig|kaum sonne|wenig licht|kaum licht|kein sonnenlicht|fast kein licht|kein licht|schatten)\b|\b(?:kaum sonne|kaum sonnenlicht|wenig licht|kein licht|dunkel|schatten|schattig).{0,90}\b(?:boden|unten|unter den b[aä]umen)\b/.test(s))o.light.bottom='dark';
- if(/\b(?:wenig|kaum|fast kein|gar kein) (?:sonnen)?licht (?:kommt|gelangt|dringt).{0,55}\b(?:boden|unten)\b|\b(?:sonne|sonnenlicht|licht) (?:kommt|gelangt|dringt).{0,55}\b(?:kaum|nicht|wenig|fast gar nicht).{0,40}\b(?:boden|unten)\b/.test(s))o.light.bottom='dark';
- if(o.light.bottom!=='dark'&&/\b(?:boden|unten).{0,50}\b(?:hell|sonnig|viel sonne)\b/.test(s))o.light.bottom='bright';
+function treeSize(v){let t=v.near;
+ if(/\b(?:gro[sß]\w*.{0,20}(?:und|oder).{0,16}klein\w*|klein\w*.{0,20}(?:und|oder).{0,16}gro[sß]\w*|verschieden\w* (?:hohen|gro[sß]en)|unterschiedlich\w* (?:gro[sß]|hoch|hohen|gro[sß]en))/.test(t))return 'mixed';
+ if(/\b(?:riesig\w*|gigantisch\w*|gewaltig\w*|riesen\w*|sehr hoch\w*|sehr gro[sß]\w*|haushoch\w*)/.test(t))return 'giant';
+ if(/\b(?:klein\w*|niedrig\w*|winzig\w*|jung\w*)/.test(t))return 'small';
+ if(/\b(?:hoch\w*|gro[sß]\w*|lang\w*)/.test(t))return 'tall';
+ return 'normal'}
+function sceneSegments(text){return text.replace(/\b(?:ach ja|und dann|außerdem|zusatzlich|dann ist da|und da ist|des weiteren)\b/g,'. ').replace(/[,;]\s*(?=(?:aber|sondern|ich|da|es|der|die|das|oben|unten|am boden|zwischen|neben|hinten|vorne)\b)/g,'. ').split(/[.!?\n]+/).map(t=>t.trim()).filter(Boolean)}
+function localText(v){
+ const left=v.left.split(/(?:,|\baber\b|\bsondern\b|\bdaneben\b|\bdann\b)/).pop()||'';
+ let right=v.right.trim();
+ if(!/^(?:ist|sind|war|waren|hat|haben|mit|wirkt|sieht|erscheint|besteht|tragt|tragen|ganz|sehr|ziemlich|steht|sitzt|fliegt|lauft|hangt|hangen|oben|unten|in|im|am|auf|uber|unter|zwischen)\b/.test(right))right='';
+ right=right.split(/(?:,|\baber\b|\bsondern\b|\bdaneben\b|\bund da\b|\bund dann\b)/)[0];
+ return {left,right,near:left+' '+right};
+}
+function itemColor(v){const x=localText(v);return color(x,null)}
+function itemDimension(v,def=1){return dimension(localText(v),def)}
+function itemPosition(v){const q=localText(v),raw={near:q.near,entire:q.near};return position(raw)}
+function parse(raw){
+ const s=normalize(raw),all=locate(s),frags=sceneSegments(s);
+ let o={text:s,trees:[],animals:[],features:[],canopy:{density:'normal',color:'#4b9449',shape:'normal',oversized:false},ground:{color:null,explicitColor:false,wet:'normal',bare:false,litter:false},light:{top:'normal',bottom:'normal'},weather:[],coverage:{},warnings:[],density:'normal',background:'forest',perspective:'straight',view:'forest'};
+ const by=k=>all.filter(a=>a.kind===k);
+ const seenForest=/\b(?:wald|regenwald|dschungel|urwald|waldes|walde)\b/.test(s);
+ const tr=by('tree');
+ const allNounWords=[...tr,...all.filter(a=>a.kind.startsWith('animal:'))];
+ let noTrees=/\b(?:keine|ohne|gar keine) (?:baume|baumchen|palmen)\b/.test(s);
+ let dense=/\b(?:dicht(?:er|en|es)?|zugewuchert|undurchdringlich|unzahlig|sehr viele|ganz viele|voller baume|kaum durchkommen|kaum platz)\b/.test(s);
+ let open=/\b(?:lichter wald|lichtung|weit auseinander|wenige baume|nur ein paar baume|offener wald|kaum baume)\b/.test(s);
+ o.density=dense?'dense':open?'sparse':'normal';o.canopy.density=o.density;
+ const repeated=new Set();
+ for(const m of tr){
+  let v=scope(s,m,all);if(negated(v))continue;
+  let type=/palm/.test(m.word)?'palm':/tanne|fichte|kiefer|nadelbaum/.test(m.word)?'pine':'broad';
+  let height=/baumries/.test(m.word)?'giant':treeSize(v);
+  let group={count:qty(v,4,36),height,type,trunk:'#977a60',pos:itemPosition(v)};
+  if(/\b(?:sehr viele|ganz viele|unzahlig|hunderte|voll viele)\b/.test(v.near))group.count=24;
+  if(/\b(?:wenige|ein paar|vereinzelt)\b/.test(v.near))group.count=3;
+  const col=itemColor(v);
+  if(col&&/\b(?:stamm|stamme|stammen|rinde|holz)\b/.test(v.near))group.trunk=col;
+  let id=type+':'+height+':'+(group.pos.back?'back':'normal');
+  if(repeated.has(id)){
+    let older=o.trees.find(t=>t._id===id);if(older){older.count=Math.max(older.count,group.count);if(group.trunk!=='#977a60')older.trunk=group.trunk;}
+  }else{group._id=id;o.trees.push(group);repeated.add(id)}
+ }
+ if(noTrees&&!o.trees.length)o.trees=[];
+ if(!tr.length&&seenForest&&!noTrees)o.trees=[{count:dense?22:open?4:10,height:'mixed',type:'broad',trunk:'#977a60',pos:{}}];
+ // „Einige riesige Bäume überragen die anderen“ verändert die Verteilung, erhöht nicht die Gesamtzahl.
+ if(/\b(?:uberrag\w*|große und kleine|kleine und große|unterschiedlich hohe|unterschiedlich große|verschieden hohe|verschieden große|riesige und kleine)\b/.test(s))for(const t of o.trees)if(t.height==='normal'||t.height==='tall')t.height='mixed';
+ if(o.trees.length===1&&o.trees[0].height==='normal'&&dense)o.trees[0].height='mixed';
+ if(o.trees.length>1){let sum=o.trees.reduce((n,t)=>n+t.count,0);if(sum>40){let f=40/sum;for(let t of o.trees)t.count=Math.max(1,Math.round(t.count*f))}}
+ let leaves=by('leaf');for(let m of leaves){let v=scope(s,m,all);if(negated(v))continue;
+  let c=itemColor(v);if(c)o.canopy.color=c;
+  let shape=leafShape(v);if(shape!=='normal')o.canopy.shape=shape;
+  if(/\b(?:riesig|groß|gross|sehr groß|breit|regenschirm)\b/.test(v.near))o.canopy.oversized=true;
+  if(/\b(?:uber mir|uber dem kopf|oben|von oben|runter|herunter|hangen|hangt|dach)\b/.test(v.near)&&/blatt|blatter/.test(m.word)){
+    let old=o.features.find(f=>f.kind==='leaf');if(!old)o.features.push({kind:'leaf',count:qty(v,3,8),size:itemDimension(v,1.1),color:c||o.canopy.color,shape,pos:{top:true},hanging:true});else{old.count=Math.max(old.count,qty(v,3,8));if(c)old.color=c;}
+  }
+ }
+ const fKinds=['vine','branch','fern','shrub','flower','grass','moss','mushroom','plant','roots','stone','wood','water','waterfall'];
+ for(let kind of fKinds)for(let m of by(kind)){
+  let v=scope(s,m,all);if(negated(v))continue;
+  // ‚Von den Ästen hängen Lianen‘ beschreibt keine herunterhängenden Äste.
+  if(kind==='branch'&&/\b(?:von|an) den asten hang\w*.{0,40}\blianen\b/.test(v.entire))continue;
+  let def={vine:3,branch:2,fern:4,shrub:3,flower:3,grass:4,moss:4,mushroom:2,plant:4,roots:3,stone:3,wood:1,water:1,waterfall:1}[kind];
+  let item={kind,count:qty(v,def,26),size:itemDimension(v,1),color:itemColor(v),shape:leafShape(v),pos:itemPosition(v),hanging:/\b(?:hang\w*|herunter|runter|herab|von oben|baumkrone|uber mir)\b/.test(v.near),word:m.word};
+  let same=o.features.find(f=>f.kind===kind && (f.pos?.top===item.pos?.top) && (f.pos?.ground===item.pos?.ground));
+  if(same){same.count=Math.max(same.count,item.count);if(item.color)same.color=item.color;if(item.hanging)same.hanging=true;}else o.features.push(item);
+ }
+ // Umgangssprachliche Umschreibungen; Äste bleiben Äste, keine automatische Umwandlung in Lianen.
+ if(!o.features.some(f=>f.kind==='vine')&&/\b(?:grunes zeug hangt|lange pflanzen hangen|pflanzen wie seile|pflanzen umwickeln|schlingen sich um|seilartige pflanzen)\b/.test(s))o.features.push({kind:'vine',count:4,size:1,color:'#477b45',pos:{top:true},hanging:true});
+ if(!o.features.some(f=>f.kind==='branch')&&/\b(?:holzige dinge hangen|lange dinge von den asten|zweige kommen runter)\b/.test(s))o.features.push({kind:'branch',count:3,size:1,color:'#846a50',pos:{top:true},hanging:true});
+ const groundM=by('ground');
+ for(let m of groundM){let v=scope(s,m,all);let c=itemColor(v);if(c){o.ground.color=c;o.ground.explicitColor=true}
+ if(/\b(?:matschig|schlammig|nass|uberschwemmt|klatschnass)\b/.test(v.near))o.ground.wet='wet';else if(/\b(?:feucht|klamm)\b/.test(v.near))o.ground.wet='damp';else if(/\b(?:trocken|staubig|ausgetrocknet)\b/.test(v.near))o.ground.wet='dry';}
+ const groundColor=s.match(/\b(?:boden|waldboden|erde|untergrund)\b.{0,42}\b(dunkelgrun|hellgrun|dunkelbraun|hellbraun|rotbraun|braun|grun|grau|schwarz|weis|weiss|beige|rot)\b/);
+ if(groundColor){let c=colorDefs.find(([p])=>new RegExp('^'+p+'$').test(groundColor[1]));if(c){o.ground.color=c[1];o.ground.explicitColor=true}}
+ // Bodenbegrünung bleibt erhalten, wenn keine Büsche, aber sehr wohl Farne beschrieben sind.
+ if(/\b(?:kein bewuchs|keine pflanzen|ohne pflanzen|unbewachsen|komplett kahl|nichts wachst)\b.{0,40}\b(?:boden|unten)\b|\b(?:boden|unten)\b.{0,60}\b(?:unbewachsen|komplett kahl|keine pflanzen|ohne pflanzen|nichts wachst)\b/.test(s)){
+  o.ground.bare=true;o.features=o.features.filter(f=>!['fern','shrub','flower','grass','moss','plant'].includes(f.kind));
+ }
+ o.ground.litter=/\b(?:laub am boden|blatter auf dem boden|heruntergefallene blatter|trockene blatter liegen|boden voller blatter|laubboden|laub bedeckt den boden)\b/.test(s);
+ if(/\b(?:feuchter|nasser|matschiger|trockener|schlammiger)\s+(?:wald)?boden\b/.test(s)){let x=s.match(/\b(feuchter|nasser|matschiger|trockener|schlammiger)\s+(?:wald)?boden\b/)[1];o.ground.wet=x==='trockener'?'dry':x==='feuchter'?'damp':'wet'}
+ if(/\b(?:boden|waldboden|untergrund|unten)\b.{0,95}\b(?:nass|feucht|schlammig|matschig|trocken)\b/.test(s)){
+ let m=s.match(/\b(?:boden|waldboden|untergrund|unten)\b.{0,95}?\b(nass|feucht|schlammig|matschig|trocken)\b/);
+ if(m)o.ground.wet=m[1]==='trocken'?'dry':m[1]==='feucht'?'damp':'wet';
+ }
+ if(/\b(?:feucht|nass|trocken|matschig|schlammig)\b.{0,55}\b(?:boden|waldboden|untergrund)\b/.test(s)){
+ let m=s.match(/\b(feucht|nass|trocken|matschig|schlammig)\b.{0,55}\b(?:boden|waldboden|untergrund)\b/);
+ if(m)o.ground.wet=m[1]==='trocken'?'dry':m[1]==='feucht'?'damp':'wet';
+ }
+
+ if(/\b(?:oben|ganz oben|uber den baumen|baumkronen|kronendach).{0,110}\b(?:hell|sonnig|sonne|viel licht)\b|\b(?:hell|sonnig|sonne).{0,80}\b(?:oben|baumkronen)\b/.test(s))o.light.top='bright';
+ if(/\b(?:unten|am boden|waldboden|unter den baumen).{0,115}\b(?:dunkel|schattig|kaum sonne|wenig licht|kaum licht|kein sonnenlicht|fast kein licht|kein licht|schatten)\b|\b(?:kaum sonne|wenig licht|kein licht|dunkel|schatten|schattig).{0,100}\b(?:boden|unten|unter den baumen)\b/.test(s))o.light.bottom='dark';
+ if(/\b(?:licht|sonne|sonnenlicht)\b.{0,45}\b(?:kaum|wenig|nicht|fast gar nicht)\b.{0,45}\b(?:boden|unten)\b|\b(?:kaum|wenig|kein)\b.{0,25}\b(?:licht|sonne)\b.{0,65}\b(?:boden|unten)\b/.test(s))o.light.bottom='dark';
+ if(o.light.bottom==='normal'&&/\b(?:boden|unten).{0,55}\b(?:hell|sonnig|viel sonne)\b/.test(s))o.light.bottom='bright';
  if(/\b(?:sonne|sonnenschein|sonnenstrahlen)\b/.test(s)&&!/\b(?:keine sonne|kaum sonne|kein sonnenlicht)\b/.test(s))o.weather.push('sun');
- if(/\b(?:wolken|bew[oö]lkt)\b/.test(s))o.weather.push('cloud');if(/\b(?:regen|regnet|nieselregen|starkregen)\b/.test(s)&&!/\b(?:kein regen|ohne regen)\b/.test(s))o.weather.push('rain');if(/\b(?:nebel|neblig|diesig)\b/.test(s))o.weather.push('fog');if(/\b(?:schnee|schneit)\b/.test(s))o.weather.push('snow');if(/\b(?:nacht|nachts|stockdunkel)\b/.test(s))o.weather.push('night');
- // Licht und Atmosphäre - Schwüle und Feuchtigkeit am Boden sind nicht dasselbe.
- if(/\b(?:schw[uü]l|feuchte luft|warme feuchte luft|dampfend|dunstig)\b/.test(s))o.weather.push('humid');
- if(o.light.bottom==='normal'&&/\b(?:alles ist dunkel|ganz d[uü]ster|sehr dunkler wald)\b/.test(s))o.light.bottom='dark';
- // Tiere: keine Vermischung der Arten. Allgemeine Nennung "Tiere" führt nicht zu erfundenen Gestalten.
- for(let m of all.filter(a=>a.kind.startsWith('animal:'))){let v=scope(s,m,all);if(negated(v)||/\b(?:h[oö]re|geh[oö]rt|ger[aä]usch|schreien|ruf)\b/.test(v.left.slice(-40))&&!/\b(?:sehe|sitzt|fliegt|steht|l[aä]uft)\b/.test(v.near))continue;
- let kind=m.kind.split(':')[1];o.animals.push({kind,label:m.word,count:qty(v,/n$|v[oö]gel|g[aä]nse/.test(m.word)?2:1,8),size:dimension(v,1),color:color(v,null),pos:position(v),striped:/\b(?:gestreift|streifen)\b/.test(v.near)||kind==='tiger',spotted:/\b(?:gefleckt|flecken|punkte|gepunktet)\b/.test(v.near),flying:/\b(?:fliegen|fliegt|fliegend|schweben|schwebt)\b/.test(v.near)})}
- // Höchstens 45 sichtbare Tiere und nicht mehrere Treffer derselben Kategorie wegen Wiederholungen.
- let merged=[];for(let a of o.animals){let prev=merged.find(z=>z.kind===a.kind&&z.label===a.label);if(prev){prev.count=Math.max(prev.count,a.count);if(a.color)prev.color=a.color;prev.pos=a.pos}else merged.push(a)}o.animals=merged.slice(0,15);
- if(/\b(?:keine tiere|gar keine tiere|ohne tiere|ich sehe keine tiere)\b/.test(s)&&o.animals.length===0)o.animals=[];
- let cov={trees:!!treems.length||sceneForest,top:by('leaf').length>0||/\b(?:oben|[uü]ber mir|krone|himmel|kronendach)\b/.test(s),ground:groundM.length>0||/\b(?:unten|am boden|waldboden)\b/.test(s),animals:all.some(x=>x.kind.startsWith('animal:'))||/\b(?:keine tiere|keine v[oö]gel|keine affen)\b/.test(s),light:/\b(?:hell|dunkel|sonne|licht|schatten|schattig)\b/.test(s),moisture:/\b(?:feucht|nass|trocken|matschig|schw[uü]l|regen)\b/.test(s)};o.coverage=cov;
- return o}
-function nextQuestion(f,history){if(history.length>=3)return null;let possible=[['ground','Wie sah der Waldboden aus?'],['top','Wie sah es über dir aus?'],['trees','Wie sahen die Bäume aus?'],['light','Wie waren die Lichtverhältnisse?'],['animals','Welche Tiere hast du gesehen?'],['moisture','War es trocken, feucht oder nass?']];let next=possible.find(([k])=>!f.coverage[k]&&!history.some(h=>h.key===k));return next?{key:next[0],question:next[1]}:null}
+ if(/\b(?:wolken|bewolkt)\b/.test(s))o.weather.push('cloud');
+ if(/\b(?:regen|regnet|nieselregen|starkregen)\b/.test(s)&&!/\b(?:kein regen|ohne regen)\b/.test(s))o.weather.push('rain');
+ if(/\b(?:nebel|neblig|diesig)\b/.test(s))o.weather.push('fog');
+ if(/\b(?:schnee|schneit)\b/.test(s))o.weather.push('snow');
+ if(/\b(?:nacht|nachts|stockdunkel)\b/.test(s))o.weather.push('night');
+ if(/\b(?:schwul|feuchte luft|dampfend|dunstig)\b/.test(s))o.weather.push('humid');
+ if(/\b(?:ich schaue nach oben|blicke nach oben|sehe nach oben|uber meinem kopf)\b/.test(s))o.perspective='up';
+ if(/\b(?:von oben auf|aus der vogelperspektive|aus der luft)\b/.test(s))o.perspective='bird';
+ // Nur explizit sichtbare Tiere; wiederholte Nennungen werden NICHT aufaddiert.
+ for(let m of all.filter(a=>a.kind.startsWith('animal:'))){let v=scope(s,m,all);
+ if(negated(v)||(/\b(?:hore|gehort|gerausch|schreien|ruf|brullen)\b/.test(v.left.slice(-47))&&!/\b(?:sehe|sitzt|fliegt|steht|lauft)\b/.test(v.near)))continue;
+ let kind=m.kind.split(':')[1];let item={kind,label:m.word,count:qty(v,/n$|vogel|gansen/.test(m.word)?2:1,9),size:itemDimension(v,1),color:itemColor(v),pos:itemPosition(v),striped:/\b(?:gestreift|streifen)\b/.test(v.near)||kind==='tiger',spotted:/\b(?:gefleckt|punkte|gepunktet)\b/.test(v.near),flying:/\b(?:fliegen|fliegt|fliegend|schweben|schwebt)\b/.test(v.near)};
+ let exists=o.animals.find(a=>a.kind===kind && a.label===item.label);
+ if(exists){exists.count=Math.max(exists.count,item.count);if(item.color)exists.color=item.color;exists.flying ||=item.flying;if(item.pos.top||item.pos.ground)exists.pos=item.pos;}
+ else o.animals.push(item);
+ }
+ o.animals=o.animals.slice(0,16);
+ // Unterschiedliche Informationen können in langen Diktaten beliebig verteilt sein.
+ o.coverage={trees:tr.length>0||seenForest||noTrees,top:by('leaf').length>0||/\b(?:oben|uber mir|kronendach|himmel|baumkrone)\b/.test(s),ground:groundM.length>0||/\b(?:am boden|unten|untergrund|erde)\b/.test(s),animals:all.some(a=>a.kind.startsWith('animal:'))||/\b(?:keine tiere|ohne tiere|nichts lebt)\b/.test(s),light:/\b(?:hell|dunkel|sonne|licht|schatten|schattig)\b/.test(s),moisture:/\b(?:feucht|nass|trocken|matschig|schwul|regen)\b/.test(s)};
+ return o;
+}
+function nextQuestion(f,history){
+ if(history.length>=3)return null;
+ let candidates=[['ground','Wie sah der Waldboden aus?'],['top','Wie sah es über dir aus?'],['trees','Wie sahen die Bäume aus?'],['light','War es am Waldboden hell oder dunkel?'],['animals','Hast du Tiere gesehen? Wenn ja, welche?'],['moisture','War es eher trocken, feucht oder nass?']];
+ let picked=candidates.find(([key])=>!f.coverage[key]&&!history.some(h=>h.key===key));return picked?{key:picked[0],question:picked[1]}:null;
+}
 const P=(d,fill='none',stroke='none',w=1,extra='')=>`<path d="${d}" fill="${fill}" stroke="${stroke}" stroke-width="${w}" stroke-linecap="round" stroke-linejoin="round" ${extra}/>`;
 const E=(x,y,rx,ry,fill,stroke='none',w=1,extra='')=>`<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="${fill}" stroke="${stroke}" stroke-width="${w}" ${extra}/>`;
 const C=(x,y,r,fill,stroke='none',w=1)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${fill}" stroke="${stroke}" stroke-width="${w}"/>`;
@@ -287,95 +374,182 @@ let defaultColor={monkey:'#9a6d42',parrot:['#e2bd34','#d23f2f','#307eae','#36a45
   sketch+=E(0,0,37,22,col,dark,2)+C(-31,-21,18,col,dark,2)+L(-20,15,-20,35,dark,5)+L(20,15,20,35,dark,5)+C(-37,-24,2.6,'#17291f');
  }
  return `<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${clamp(scale,.25,2).toFixed(3)})">${sketch}</g>`}
-function render(f){const R=random(hash(f.text||'wald')),rand=(a,b)=>a+(b-a)*R(),W=1280,H=760;
- let out=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Individuelle, aus deinen Worten gezeichnete Waldszene"><defs>
- <linearGradient id="bg-v3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${f.weather.includes('night')?'#182f49':'#84d0ef'}"/><stop offset=".61" stop-color="${f.weather.includes('night')?'#304651':'#d8eace'}"/><stop offset="1" stop-color="#6b9573"/></linearGradient>
- <linearGradient id="shade-v3" x1="0" y1="0" x2="0" y2="1"><stop offset=".12" stop-color="#061d18" stop-opacity="0"/><stop offset="1" stop-color="#061d18" stop-opacity=".58"/></linearGradient>
- <linearGradient id="floor-v3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#647458"/><stop offset="1" stop-color="#40503c"/></linearGradient>
- ${SPRITE_DEFS}</defs><rect width="1280" height="760" fill="url(#bg-v3)"/>`;
- if(f.weather.includes('sun'))out+=C(1102,110,58,'#fff1b5')+C(1102,110,78,'#fff3b4','none',0);
- if(f.weather.includes('cloud'))for(let j=0;j<4;j++){let x=40+j*340,y=70+R()*35;out+=E(x,y,110,32,'#ecf1ef','none',0,'opacity=".7"')}
- // Der Boden belegt im Bild nur den unteren Bereich. Keine riesige braune Fläche mehr.
- let groundCol=f.ground.explicitColor?f.ground.color:(f.weather.includes('snow')?'#e9ece8':'#536a51');
- out+=P('M0 680 Q160 668 325 684 Q535 670 750 681 Q1034 665 1280 680 L1280 760 L0 760Z',groundCol,'none',0);
- for(let j=0;j<30;j++){let x=rand(0,1280),y=rand(684,759),w=rand(18,82);out+=E(x,y,w,rand(3,10),f.ground.explicitColor?shade(groundCol,j%2?15:-12):j%2?'#698365':'#4a5944','none',0,'opacity=".28"')}
- if(f.ground.wet==='wet')for(let j=0;j<5;j++){let x=rand(50,1220),y=rand(710,755);out+=E(x,y,rand(25,70),rand(4,10),'#92b3a5','none',0,'opacity=".53"')}
- if(f.ground.wet==='dry')for(let j=0;j<18;j++){let x=rand(0,1240),y=rand(693,757);out+=P(`M${x} ${y} l${rand(6,18)} 4 l${rand(6,18)} -4`,'none',shade(groundCol,-23),1.2)}
- // Individuelle Baumgruppen: kleine im Hintergrund, Baumriesen im Vordergrund.
- let treeParts=[];for(const g of f.trees){let count=clamp(g.count,0,32);for(let j=0;j<count;j++){let kind=g.height==='mixed'?(j%6===0?'giant':j%3===0?'tall':j%2===0?'normal':'small'):g.height;
- let h=kind==='giant'?rand(560,670):kind==='tall'?rand(435,548):kind==='small'?rand(210,300):rand(320,455);
- if(g.height==='mixed'&&j%5===3)h=rand(400,555);
- treeParts.push({h,g,priority:kind==='giant'?3:kind==='tall'?2:kind==='normal'?1:0,order:j})}}
- const n=treeParts.length;
- treeParts.sort((a,b)=>a.priority-b.priority);
- const far=treeParts.filter(t=>t.priority<=1),near=treeParts.filter(t=>t.priority>1);
- for(let group of [far,near])for(let j=0;j<group.length;j++){
- let t=group[j],num=group.length;
- let x=(j+.5)*(W/Math.max(1,num))+(n>2?rand(-W/Math.max(num,5)*.30,W/Math.max(num,5)*.30):0);
- if(num===1)x=n===1?W*.51:(t.priority>=2?W*.56:W*.28);
- let y=t.priority>=2?rand(692,730):rand(651,710);
- let depth=t.priority===0?.58:t.priority===1?.80:t.priority===2?.97:1;
- let h=t.h*(t.priority===0?.82:t.priority===1?.92:1);
- out+=tree(x,y,h,t.g,R,depth,{foliage:t.priority<=1?shade(f.canopy.color,17):f.canopy.color,baseFoliage:f.canopy.color,leafShape:f.canopy.shape,roots:f.features.some(x=>x.kind==='roots')})}
- // Blätter und von oben hängende Elemente liegen bewusst vor den Bäumen.
- for(let group of f.features.filter(v=>['vine','branch','leaf'].includes(v.kind))){let amount=clamp(group.count,1,18);for(let j=0;j<amount;j++){
- let x=group.pos?.left?rand(30,400):group.pos?.right?rand(880,1250):rand(45,1235);
- if(group.kind==='vine')out+=vine(x,rand(65,250),rand(210,410)*group.size,group.color||'#447d40',R);
- else if(group.kind==='branch')out+=group.hanging?hangingBranch(x,rand(60,240),rand(180,330)*group.size,group.color||'#826849',R):P(`M${x-65} ${rand(350,465)} Q${x} ${rand(300,375)} ${x+80} ${rand(310,420)}`,'none',group.color||'#80664a',7);
- else{let top=group.pos?.ground?rand(692,752):rand(10,155),size=group.size*(f.canopy.oversized?1.22:1),w=clamp(25*size,15,76),h=clamp(85*size,36,176);
- out+=P(`M${x-3} ${Math.max(0,top-80)} Q${x+7} ${top-12} ${x} ${top}`,'none',shade(group.color||f.canopy.color,-42),2.6);
- out+=leaf(x,top+h,w,h,group.color||f.canopy.color,rand(-44,44),group.shape||f.canopy.shape)}
+function render(f){
+ const W=1280,H=760,R=random(hash(f.text||'waldszene')),rr=(a,b)=>a+(b-a)*R();
+ const total=f.trees.reduce((n,g)=>n+g.count,0),hasTrees=total>0;
+ const daytime=!f.weather.includes('night');
+ const dense=total>=17||f.density==='dense',sparse=total<=5||f.density==='sparse';
+ let s=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" role="img" aria-label="Waldillustration passend zur Beschreibung"><defs>
+ <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${daytime?'#86cce6':'#203c50'}"/><stop offset=".72" stop-color="${daytime?'#bddfda':'#3d625e'}"/><stop offset="1" stop-color="#67866a"/></linearGradient>
+ <linearGradient id="haze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6efdc" stop-opacity=".05"/><stop offset="1" stop-color="#dbe7ce" stop-opacity=".42"/></linearGradient>
+ <linearGradient id="darkness" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#112b2d" stop-opacity="0"/><stop offset=".55" stop-color="#102720" stop-opacity=".08"/><stop offset="1" stop-color="#081a12" stop-opacity=".54"/></linearGradient>
+ <linearGradient id="forestfloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#536d53"/><stop offset=".68" stop-color="#37533a"/><stop offset="1" stop-color="#2e4330"/></linearGradient>
+ <filter id="treeSoft"><feGaussianBlur stdDeviation=".65"/></filter>
+ ${SPRITE_DEFS}</defs><rect width="1280" height="760" fill="url(#sky)"/>`;
+ if(f.weather.includes('sun')&&daytime){s+=`<circle cx="1060" cy="92" r="61" fill="#fff1bb" opacity=".74"/><circle cx="1060" cy="92" r="97" fill="#fff5ca" opacity=".13"/>`}
+ if(f.weather.includes('cloud'))for(let j=0;j<4;j++){let x=rr(30,1230),y=rr(60,155);s+=E(x,y,rr(80,132),rr(20,40),'#eaf2eb','none',0,'opacity=".6"')}
+ // Im dichten Wald ist die Ferne eine geschlossene, abgestufte Vegetation und kein offener Himmel.
+ if(hasTrees&&total>=7){
+   let layers=dense?3:2;
+   for(let k=0;k<layers;k++){
+     let y=285+k*97,ink=k===0?'#628f70':k===1?'#437e61':'#2d684d';
+     let d=`M0 ${y+122} L0 ${y+rr(20,55)}`;
+     for(let x=0;x<=1320;x+=28){let bump=Math.sin((x+k*67)*.026)*24+Math.sin(x*.087+k)*19+rr(-16,16);d+=` L${x} ${y+32+bump}`}
+     s+=P(d+' L1280 705 L0 705Z',ink,'none',0,`opacity="${k===0?.57:k===1?.75:.74}"`);
+     if(k<2)s+=`<rect x="0" y="${y+90}" width="1280" height="${92+k*25}" fill="url(#haze)" opacity=".45"/>`;
+   }
+ }
+ // Boden: botanisch passende Oberfläche, nicht als künstlicher brauner Balken.
+ let soil=f.ground.explicitColor?f.ground.color:(f.weather.includes('snow')?'#e3e9e7':f.ground.wet==='dry'?'#a58e65':'#405a43');
+ let floorTop=676;
+ s+=P(`M0 ${floorTop} Q190 660 400 674 Q630 663 825 675 Q1000 667 1280 678 L1280 760 L0 760Z`,f.ground.explicitColor?soil:'url(#forestfloor)','none',0);
+ if(f.ground.explicitColor)s+=P(`M0 694 Q450 681 815 696 Q1010 691 1280 694 L1280 760 L0 760Z`,shade(soil,-13),'none',0,'opacity=".29"');
+ // Zarte Texturen sind keine zusätzlichen erfundenen Gegenstände.
+ for(let j=0;j<140;j++){let x=rr(0,1280),y=rr(677,760);s+=E(x,y,rr(2,13),rr(1,3.5),f.ground.explicitColor?shade(soil,j%2?15:-15):j%2?'#78906b':'#263d31','none',0,`opacity="${rr(.07,.21).toFixed(2)}"`)}
+ if(f.ground.wet==='wet')for(let j=0;j<13;j++){let x=rr(25,1250),y=rr(696,755);s+=E(x,y,rr(22,74),rr(3,10),'#9bbaa7','none',0,'opacity=".35"')}
+ if(f.ground.wet==='dry')for(let j=0;j<26;j++){let x=rr(15,1240),y=rr(694,751);s+=P(`M${x} ${y} l${rr(9,24)} -2 l${rr(2,8)} 5`,'none',shade(soil,-31),1.2,'opacity=".46"')}
+ const groupCounts=[];for(let g of f.trees)for(let i=0;i<Math.min(32,g.count);i++)groupCounts.push({...g,groupIndex:i});
+ const ordered=groupCounts.sort((a,b)=>(a.height==='giant'?1:0)-(b.height==='giant'?1:0));
+ const trees=[],tall=ordered.filter(g=>g.height==='giant'||g.height==='tall');
+ // Auf große Vorzeigebäume folgen kleinere Bäume im Hintergrund; unterschiedliche Höhen sind sichtbar.
+ const maxVisible=Math.min(31,ordered.length);
+ const pool=ordered.slice(0,maxVisible).map((g,j)=>{
+   const size=g.height==='giant'?rr(520,650):g.height==='tall'?rr(430,565):g.height==='small'?rr(190,275):g.height==='mixed'?((j%9===0)?rr(450,550):(j%4===0)?rr(350,410):rr(220,310)):rr(300,450);
+   return{g,size,idx:j};
+ });
+ const large=pool.filter(t=>t.size>=415),small=pool.filter(t=>t.size<415);
+ // Kleinere Bäume stehen weiter hinten, die größeren bilden das eigentliche Waldprofil.
+ for(let j=0;j<small.length;j++){
+   let t=small[j],n=small.length;
+   let x=(j+.48)*W/n+rr(-24,24),base=rr(637,685),h=t.size;
+   trees.push({x,base,h,g:t.g,depth:.57+rr(0,.18)});
+ }
+ for(let j=0;j<large.length;j++){
+   let t=large[j],n=large.length;
+   let x=(j+.52)*W/n+rr(-Math.min(52,W/n*.26),Math.min(52,W/n*.26)),base=rr(677,716);
+   trees.push({x,base,h:t.size,g:t.g,depth:1});
+ }
+ trees.sort((a,b)=>a.base-b.base);
+ const c=f.canopy.color,canonical=['#4b9449','#418e48','#a3cd60','#254c31','#677d37','#508e4b'].includes(c);
+ // Skalenvariation und horizontale Spiegelung verhindern sichtbare Kachelreihen.
+ for(let i=0;i<trees.length;i++){
+   let t=trees[i],wide=t.h>=415,fol=c,asset=canonical&&t.g.type!=='pine'&&t.g.trunk==='#977a60';
+   if(asset){const id=t.g.type==='palm'?'palme':wide?(i%3===0?'kleinerbaum':'baumriese'):'kleinerbaum';const [iw,ih]=SPRITE_DIMS[id];let k=t.h/ih,mirror=(i%3===1)?-1:1;
+      let variant=i%4;let filter=variant===0?'':variant===1?'style="filter:saturate(.90) brightness(.97)"':variant===2?'style="filter:saturate(1.08) brightness(1.03)"':'style="filter:saturate(.94) contrast(1.02)"';
+      s+=`<use href="#spr-${id}" transform="translate(${(t.x).toFixed(2)} ${(t.base-t.h).toFixed(2)}) scale(${(mirror*k).toFixed(5)} ${k.toFixed(5)}) translate(${(-iw/2).toFixed(2)} 0)" ${filter} opacity="${t.depth<.75?.75:1}"/>`;
+   }else s+=tree(t.x,t.base,t.h,t.g,R,t.depth,{baseFoliage:'',foliage:fol,leafShape:f.canopy.shape,roots:f.features.some(v=>v.kind==='roots')});
+ }
+ // Die oberste Blätterzone ist optional. Jedes Blatt besitzt einen sichtbaren Stiel am oberen Rand.
+ const freeLeaves=f.features.filter(x=>x.kind==='leaf'&&x.pos?.top);
+ const crowns=trees.filter(t=>t.h>290).sort((a,b)=>b.h-a.h);
+ for(const group of freeLeaves){let cnt=Math.min(8,group.count);for(let i=0;i<cnt;i++){
+  let host=crowns.length?crowns[(i*3+Math.floor(rr(0,crowns.length)))%crowns.length]:null;
+  let sz=group.size*(f.canopy.oversized?1.25:1),w=Math.min(80,30*sz),h=Math.min(135,66*sz);
+  let x=host?host.x+rr(-host.h*.22,host.h*.22):rr(65,1210);
+  let y=host?host.base-host.h*.62+rr(-23,30):rr(90,150);
+  if(host)s+=P(`M${host.x} ${host.base-host.h*.65} Q${(host.x+x)/2} ${y-15} ${x} ${y}`,'none','#566d3f',2.8,'opacity=".85"');
+  else s+=P(`M${x} 0 Q${x+7} ${y*.5} ${x} ${y}`,'none','#566d3f',2.7);
+  s+=leaf(x,y,w,h,group.color||c,rr(-45,45),group.shape||f.canopy.shape);
  }}
- const groups=[];
- for(let g of f.features.filter(v=>!['vine','branch','leaf'].includes(v.kind))){let amount=clamp(g.count,1,g.kind==='fern'?12:26);for(let j=0;j<amount;j++){let x=g.pos?.left?rand(50,400):g.pos?.right?rand(880,1220):rand(25,1250),y=rand(685,758),size=g.size*rand(.73,1.23);
- if(g.kind==='fern')size*=.75;let html='',c=g.color||({fern:'#488d45',plant:'#69a247',shrub:'#55974e',grass:'#659a4b',flower:'#e4a45c',moss:'#75935b',mushroom:'#a75c4b',roots:'#957657',water:'#68a5bc'}[g.kind]||'#558b54');
- if(g.kind==='fern')html=fern(x,y,size,c,R);
- if(g.kind==='shrub')html=shrub(x,y,size,c,R);
- if(g.kind==='plant')html=broadPlant(x,y,size,c,g.shape,R);
- if(g.kind==='grass')html=grass(x,y,size,c);
- if(g.kind==='flower')html=flower(x,y,size,c,R);
- if(g.kind==='moss')html=E(x,y,rand(16,50)*size,rand(4,14)*size,c,'none',0);
- if(g.kind==='mushroom')html=mushroom(x,y,size,c);
- if(g.kind==='stone')html=stone(x,y,size);
- if(g.kind==='roots')html=P(`M${x} ${y} Q${x-35} ${y-25} ${x-75} ${y+3} M${x} ${y} Q${x+36} ${y-15} ${x+85} ${y+5}`,'none',c,7);
- if(g.kind==='wood')html=P(`M${x-50} ${y} q60 -11 125 6`,'none',c,14);
- if(g.kind==='water')html=E(x,y,rand(47,140),rand(12,25),c,'#337d98',2,'opacity=".82"');
- if(g.kind==='waterfall')html=P(`M${x-38} 355 Q${x-58} 495 ${x-42} 695 L${x+34} 695 Q${x+49} 490 ${x+26} 355Z`,c,'#397d99',2,'opacity=".84"');
- if(html)groups.push({y,html})}}
- // Boden nicht beliebig mit Laub überziehen; nur wenn das Kind Laub beschrieben hat.
- if(f.ground.litter)for(let j=0;j<48;j++){let x=rand(0,1280),y=rand(684,759);groups.push({y,html:leaf(x,y,7,17,shade('#80694c',Math.floor(rand(-40,25))),rand(-100,100),'point')})}
- for(let g of groups.sort((a,b)=>a.y-b.y))out+=g.html;
- // Ein dunkler Boden beschattet das Unterholz, nicht nur die Fläche unter einem leeren Hintergrund.
- if(f.light.bottom==='dark')out+='<rect x="0" y="260" width="1280" height="500" fill="url(#shade-v3)" opacity=".62"/>';
- if(f.weather.includes('night'))out+='<rect width="1280" height="760" fill="#07172b" opacity=".24"/>';
- // Tiere bleiben im Maßstab zur Landschaft klein und sind im Motiv klar unterscheidbar.
- for(let a of f.animals){let cnt=clamp(a.count,0,8);for(let j=0;j<cnt;j++){
-  let air=['parrot','toucan','bird','bat','butterfly'].includes(a.kind),treeAnimal=['monkey','sloth','snake'].includes(a.kind),isTop=a.pos?.top||air||treeAnimal;
-  let x=a.pos?.left?rand(110,360):a.pos?.right?rand(860,1160):rand(140,1120);
-  let y=a.pos?.ground?rand(680,713):isTop?rand(280,485):rand(680,719);
-  let s=(a.kind==='parrot'?.75:a.kind==='toucan'?.85:a.kind==='monkey'?.80:a.kind==='tiger'?.86:a.kind==='butterfly'?.51:a.kind==='insect'?.35:a.kind==='elephant'?.98:a.kind==='dino'?1.1: .72)*a.size*rand(.87,1.12);
-  if(a.pos?.back)s*=.7;if(a.pos?.top&&air)y=rand(250,395);
-  // Vögel sitzen sichtbar auf einem Ast statt als undefinierbarer Fleck im Kronendach.
-  if((a.kind==='parrot'||a.kind==='toucan'||a.kind==='bird')&&!a.flying)out+=P(`M${x-26} ${y+29} Q${x+10} ${y+31} ${x+56} ${y+24}`,'none','#80664c',4.5);
-  out+=animalSVG(a,x,y,s,R,j)
+ // Lianen und Äste starten an real existierenden Baumkronen; niemals als frei schwebende Striche.
+ const anchors=trees.filter(t=>t.h>260).sort((a,b)=>b.h-a.h);
+ for(let g of f.features.filter(v=>v.kind==='vine'||v.kind==='branch')){
+  const count=Math.min(14,g.count);for(let i=0;i<count;i++){
+    let par=anchors.length?anchors[(i*5+Math.floor(R()*anchors.length))%anchors.length]:null;
+    let x=par?par.x+rr(-par.h*.23,par.h*.23):rr(30,1250);
+    let fromY=par?par.base-par.h*rr(.57,.83):0;
+    if(g.pos?.left)x=Math.min(x,380);if(g.pos?.right)x=Math.max(x,890);
+    fromY=Math.max(5,Math.min(355,fromY));
+    let len=g.hanging||g.kind==='vine'?rr(120,280)*g.size:rr(60,140)*g.size;
+    if(g.kind==='branch'){
+      let xx=x+rr(-75,75),yy=fromY+len;
+      s+=P(`M${x} ${fromY} Q${x+rr(-45,45)} ${fromY+len*.45} ${xx} ${yy}`,'none',g.color||'#71553e',Math.max(4,8*g.size));
+      for(let k=1;k<=3;k++){let p=k/4,X=x+(xx-x)*p,Y=fromY+len*p;s+=P(`M${X} ${Y} q${k%2?30:-27} 20 ${k%2?35:-37} 36`,'none',g.color||'#745c43',3.2)}
+    }else{
+      let bx=rr(-40,40);s+=P(`M${x} ${fromY} C${x-22} ${fromY+len*.3} ${x+bx+25} ${fromY+len*.68} ${x+bx} ${fromY+len}`,'none','#304f30',6,'opacity=".54"');
+      s+=P(`M${x} ${fromY} C${x-22} ${fromY+len*.3} ${x+bx+25} ${fromY+len*.68} ${x+bx} ${fromY+len}`,'none',g.color||'#54723a',3.2);
+      for(let k=1;k<=6;k++){let p=k/7,xx=x+bx*p+7*Math.sin(p*5),yy=fromY+len*p;s+=leaf(xx+((k%2)?-11:11),yy+11,7,17,g.color||'#518247',k%2?-65:62,'point')}
+    }
+  }
+ }
+ // Blattbedeckung wird schattiert. Bei wenig Licht bleibt das obere Kronendach trotzdem hell.
+ if(f.light.bottom==='dark')s+=`<rect x="0" y="295" width="1280" height="465" fill="url(#darkness)" opacity=".63"/>`;
+ if(f.weather.includes('night'))s+=`<rect width="1280" height="760" fill="#0b1f39" opacity=".22"/>`;
+ // Unterwuchs wird nur aus explizit genannten Pflanzen gebildet, nie automatisch.
+ const groundItems=[];
+ for(let g of f.features.filter(v=>!['leaf','vine','branch'].includes(v.kind))){
+  let n=Math.min(g.count,18);for(let j=0;j<n;j++){
+   let x=g.pos?.left?rr(35,390):g.pos?.right?rr(890,1230):rr(20,1260),y=rr(681,754),k=g.size*rr(.65,1.13),co=g.color||({fern:'#458a48',plant:'#4e914c',grass:'#6b9551',shrub:'#4b8548',flower:'#bf7a58',moss:'#6b8755',mushroom:'#a55e4d'}[g.kind]||'#528247');
+   let html='';
+   if(g.kind==='fern')html=fern(x,y,k*.67,co,R);else if(g.kind==='plant')html=broadPlant(x,y,k*.82,co,g.shape,R);
+   else if(g.kind==='shrub')html=shrub(x,y,k*.76,co,R);else if(g.kind==='grass')html=grass(x,y,k*.75,co);
+   else if(g.kind==='flower')html=flower(x,y,k*.78,co,R);else if(g.kind==='moss')html=E(x,y,rr(20,45),rr(4,12),co,'none',0,'opacity=".82"');
+   else if(g.kind==='mushroom')html=mushroom(x,y,k*.85,co);else if(g.kind==='stone')html=stone(x,y,k);
+   else if(g.kind==='roots')html=P(`M${x} ${y} Q${x-38} ${y-18} ${x-85} ${y+4} M${x} ${y} Q${x+35} ${y-18} ${x+80} ${y+3}`,'none',g.color||'#79593f',5.5);
+   else if(g.kind==='wood')html=P(`M${x-55} ${y} Q${x+20} ${y-12} ${x+70} ${y}`,'none',g.color||'#816447',16);
+   else if(g.kind==='water')html=E(x,y,rr(65,120),rr(12,22),g.color||'#6ba9ac','#4b8e92',1.4,'opacity=".82"');
+   else if(g.kind==='waterfall')html=P(`M${x-34} 405 Q${x-45} 560 ${x-39} 696 L${x+38} 696 Q${x+45} 548 ${x+30} 405Z`,g.color||'#79b5c0','#4b8993',2,'opacity=".76"');
+   if(html)groundItems.push({y,html});
+  }
+ }
+ if(f.ground.litter)for(let i=0;i<34;i++){let x=rr(10,1270),y=rr(691,759);groundItems.push({y,html:leaf(x,y,rr(4,7),rr(9,15),'#967f54',rr(-150,140),'point')})}
+ for(let item of groundItems.sort((a,b)=>a.y-b.y))s+=item.html;
+ // Tiere haben eine an Baum, Ast oder Boden gebundene Position. Die Größen sind in Szeneeinheiten.
+ for(let a of f.animals){let n=Math.min(a.count,9);for(let j=0;j<n;j++){
+  const bird=['parrot','toucan','bird','butterfly','bat'].includes(a.kind),arboreal=['monkey','sloth','snake'].includes(a.kind);
+  let host=anchors.length?anchors[(j*3+Math.floor(R()*anchors.length))%anchors.length]:null;
+  let x,y;
+  if(a.pos?.ground||(!arboreal&&!bird)){
+    x=a.pos?.left?rr(110,370):a.pos?.right?rr(875,1155):rr(145,1140);y=rr(676,700);
+  }else if(host){x=host.x+rr(-host.h*.19,host.h*.19);y=host.base-host.h*rr(.40,.67);}
+  else{x=rr(120,1130);y=bird?rr(210,390):rr(470,595);}
+  if(a.pos?.left)x=Math.min(x,390);if(a.pos?.right)x=Math.max(x,890);x=clamp(x,105,1175);
+  if(a.pos?.back){y-=35;}
+  let k=(a.kind==='parrot'?.89:a.kind==='monkey'?.66:a.kind==='tiger'?1:a.kind==='elephant'?1.1:a.kind==='butterfly'?.54:a.kind==='insect'?.38:.75)*a.size*rr(.88,1.07);
+  if(a.pos?.back)k*=.75;
+  if(bird&&!a.flying&&a.kind!=='butterfly'&&!host)s+=P(`M${x-52} ${y+24} Q${x+2} ${y+35} ${x+64} ${y+23}`,'none','#745a40',7);
+  // Tiere, die auf Bäumen sitzen, werden mit einem tragenden Ast verbunden.
+  if((arboreal||bird&&!a.flying)&&host&&!['parrot','monkey','tiger'].includes(a.kind))s+=P(`M${host.x} ${y+28} Q${x} ${y+31} ${x+Math.sign(x-host.x||1)*38} ${y+28}`,'none','#765f43',Math.max(5,host.h/90));
+  s+=animalSVG(a,x,y,k,R,j);
  }}
- if(f.weather.includes('rain'))for(let j=0;j<70;j++){let x=rand(0,W),y=rand(0,H);out+=P(`M${x} ${y} l-8 23`,'none','#6ca5ba',1.7,'opacity=".56"')}
- if(f.weather.includes('snow'))for(let j=0;j<80;j++)out+=C(rand(0,W),rand(0,H),rand(1,3.5),'#f5faf9');
- if(f.weather.includes('fog')||f.weather.includes('humid'))out+='<rect width="1280" height="760" fill="#e0f0e9" opacity=".085"/>';
- out+='</svg>';return out}
+ if(f.weather.includes('rain'))for(let j=0;j<95;j++){let x=rr(0,W),y=rr(0,H);s+=P(`M${x} ${y} l-7 18`,'none','#6aa9bf',1.6,'opacity=".52"')}
+ if(f.weather.includes('snow'))for(let j=0;j<100;j++)s+=C(rr(0,W),rr(0,H),rr(1.7,4.0),'#f4f7f6');
+ if(f.weather.includes('fog'))s+=`<rect width="1280" height="760" fill="#e0ebe8" opacity=".20"/>`;
+ if(f.weather.includes('humid'))s+=`<rect x="0" y="385" width="1280" height="375" fill="#c7ddcf" opacity=".075"/>`;
+ s+='</svg>';return s;
+}
 function summarize(f){let parts=[];let n=f.trees.reduce((v,t)=>v+t.count,0);parts.push(n+' Bäume');if(f.animals.length)parts.push(f.animals.map(a=>a.count+' '+a.label).join(', '));else parts.push('Keine ausdrücklich genannten Tiere');if(f.features.length)parts.push(f.features.map(t=>({vine:'Lianen',branch:'herabhängende Äste',fern:'Farne',shrub:'Büsche',plant:'Pflanzen',leaf:'große Blätter',grass:'Gras',flower:'Blumen',water:'Wasser'}[t.kind]||t.kind)).join(', '));parts.push('Waldboden: '+(f.ground.explicitColor?'Farbe beschrieben':'Farbe nicht beschrieben'));if(f.light.bottom==='dark')parts.push('Boden dunkel');return parts.join(' · ')}
 function msg(t,error=false){$('feedback').textContent=t;$('feedback').classList.toggle('error',error)}
-function update(){let n=state.history.length+1;$('step').textContent='Frage '+n+' von höchstens 3';$('question').textContent=state.question;$('intro').textContent=n===1?'Erzähle frei und möglichst genau. Du musst keine Fachbegriffe kennen.':'Ergänze nur, was du wirklich gesehen hast.';$('answer').value='';$('skip').classList.toggle('hide',n===1);msg('Auch längere Beschreibungen sind möglich. Auf dem iPad kannst du das Tastaturmikrofon verwenden.');$('answer').focus()}
+function update(){let n=state.history.length+1;$('step').textContent='Frage '+n+' von höchstens 3';$('question').textContent=state.question;$('intro').textContent=n===1?'Erzähle in deinen eigenen Worten. Du darfst Pausen machen und auch lange beschreiben.':'Ergänze nur, was du wirklich gesehen hast.';$('answer').value='';$('skip').classList.toggle('hide',n===1);msg('Auch längere Beschreibungen sind möglich. Auf dem iPad kannst du das Tastaturmikrofon verwenden.');$('answer').focus()}
 function stopVoice(){if(state.recognition){try{state.recognition.stop()}catch(e){}state.recognition=null}state.listening=false;$('voice').classList.remove('active');$('voiceText').textContent='Sprechen'}
-function voice(){if(state.listening){stopVoice();return}let Speech=window.SpeechRecognition||window.webkitSpeechRecognition;if(!Speech){msg('Direktes Diktieren ist in diesem Browser nicht verfügbar. Nutze das Mikrofon auf der iPad-Tastatur oder die Tastatur.',true);$('answer').focus();return}
- try{const recognition=new Speech();let previous=$('answer').value.trim(),spoken='';recognition.lang='de-DE';recognition.continuous=true;recognition.interimResults=true;state.recognition=recognition;
- recognition.onresult=e=>{let final='',interim='';for(let i=0;i<e.results.length;i++){let r=e.results[i],part=r[0]?.transcript||'';if(r.isFinal)final+=part+' ';else interim+=part+' '}spoken=final;
- $('answer').value=(previous?previous+' ':'')+final+interim;
- $('answer').scrollTop=$('answer').scrollHeight};
- recognition.onerror=e=>msg('Spracherkennung nicht verfügbar ('+e.error+'). Du kannst jederzeit die Tastatur verwenden.',true);
- recognition.onend=()=>{state.listening=false;state.recognition=null;$('voice').classList.remove('active');$('voiceText').textContent='Sprechen';if(spoken)msg('Dein Diktat wurde übernommen. Du kannst weitere Sätze diktieren oder die Antwort abschicken.')};
- recognition.start();state.listening=true;$('voice').classList.add('active');$('voiceText').textContent='Aufnahme beenden';msg('Sprich ganz in Ruhe. Auch „ähm“ und längere Sätze sind erlaubt.');
- }catch(e){msg('Das Mikrofon konnte nicht gestartet werden. Bitte die Tastatur verwenden.',true)}}
+function voice(){
+ if(state.listening){stopVoice();msg('Diktat beendet. Deine Beschreibung bleibt im Textfeld.');return;}
+ let Speech=window.SpeechRecognition||window.webkitSpeechRecognition;
+ if(!Speech){msg('Das Mikrofon ist hier nicht verfügbar. Auf iPads kannst du das Mikrofon der Bildschirmtastatur verwenden.',true);$('answer').focus();return;}
+ try{
+  const recognition=new Speech();let base=$('answer').value.trim(),spoken='',recovering=false;
+  recognition.lang='de-DE';recognition.continuous=true;recognition.interimResults=true;state.recognition=recognition;
+  recognition.onresult=e=>{
+   let final='',interim='';for(let i=0;i<e.results.length;i++){let r=e.results[i],part=r[0]?.transcript||'';if(r.isFinal)final+=part+' ';else interim+=part+' ';}
+   spoken=final;
+   $('answer').value=[base,final+interim].filter(Boolean).join(' ').trim();
+   $('answer').scrollTop=$('answer').scrollHeight;
+  };
+  recognition.onerror=e=>{
+   if(e.error==='no-speech'){msg('Du kannst nach einer Pause weitersprechen.');return;}
+   state.listening=false;
+   msg('Das Mikrofon wurde unterbrochen ('+e.error+'). Dein bisheriger Text bleibt erhalten.',true);
+  };
+  recognition.onend=()=>{
+   if(state.listening){
+    base=$('answer').value.trim();spoken='';
+    // Browser begrenzen manchmal eine Aufnahme. Wir versuchen die fortgesetzte Aufnahme.
+    setTimeout(()=>{if(!state.listening)return;try{recognition.start();msg('Du kannst weiter erzählen.');}catch(e){state.listening=false;state.recognition=null;$('voice').classList.remove('active');$('voiceText').textContent='Sprechen';msg('Die Aufnahme wurde beendet. Du kannst erneut auf „Sprechen“ tippen. Der Text bleibt erhalten.');}},300);
+   }else{state.recognition=null;$('voice').classList.remove('active');$('voiceText').textContent='Sprechen';}
+  };
+  recognition.start();state.listening=true;$('voice').classList.add('active');$('voiceText').textContent='Aufnahme beenden';msg('Erzähle in Ruhe. Deine Worte werden laufend ergänzt.');
+ }catch(e){state.listening=false;msg('Die Spracherkennung konnte nicht gestartet werden. Nutze das Tastatur-Mikrofon.',true)}
+}
 function formatAnswer(h){let s=h.answer.trim();if(!s)return '';if(h.key==='ground'&&!/\b(?:boden|erde|schlamm|matsch|pflanzen|gras|farne)\b/i.test(s))return 'Der Boden ist '+s+'.';if(h.key==='top'&&!/\b(?:oben|[uü]ber|bl[aä]tter|baumkron|himmel|b[aä]um|liane|[aä]ste)\b/i.test(s))return 'Über mir sind '+s+'.';if(h.key==='trees'&&!/\b(?:b[aä]um|bäume|palme|baumstamm)\b/i.test(s))return 'Die Bäume sind '+s+'.';if(h.key==='light')return 'Die Lichtverhältnisse: '+s+'.';if(h.key==='animals'&&!/\b(?:tiere|affe|vogel|papagei|tiger|schlange|frosch|elefant)\b/i.test(s))return 'Ich sehe '+s+'.';return s}
 function fullText(){return state.history.map(formatAnswer).join('. ')}
 async function imageData(){
@@ -406,7 +580,7 @@ function makeImage(){stopVoice();let features=parse(fullText());$('stage').inner
 function accept(force=false,skip=false){stopVoice();let answer=$('answer').value.trim();if(!skip&&!answer){msg('Beschreibe zuerst deinen Wald.',true);$('answer').focus();return}let key=state.answered.at(-1)||'start';state.history.push({key,question:state.question,answer:skip?'':answer});if(force||state.history.length>=3){makeImage();return}let next=nextQuestion(parse(fullText()),state.history);if(!next){makeImage();return}state.answered.push(next.key);state.question=next.question;update()}
 function reset(){stopVoice();state.history=[];state.answered=[];state.question=FIRST;$('doneArea').classList.add('hide');$('questionArea').classList.remove('hide');$('readQuestion').classList.remove('hide');$('stage').innerHTML=`<div class="empty"><svg viewBox="0 0 140 140" fill="none" aria-hidden="true"><circle cx="70" cy="70" r="64" fill="#dbeada"/><g stroke="#427c58" stroke-width="6" stroke-linecap="round"><path d="M36 117V62m0 10L24 59m12 26 15-13M79 118V32m0 17 20-17M79 72 60 55m31 63V78m0 8 12-12"/><path d="M18 119q23-12 49 0 27-12 56 0"/></g></svg><h3>Deine Worte bestimmen das Bild.</h3><p>Erzähle, was du gesehen hast. Daraus entsteht deine Waldzeichnung.</p></div>`;$('drawStatus').textContent='Noch kein Bild';$('sceneFoot').textContent='Wähle deine eigenen Worte. Auch ungewöhnliche Vorstellungen sind erlaubt.';$('recognized').classList.add('hide');$('limitations').classList.add('hide');update()}
 $('retrySubmit').addEventListener('click',sendImage);$('continue').addEventListener('click',()=>accept(false,false));$('finish').addEventListener('click',()=>accept(true,false));$('skip').addEventListener('click',()=>accept(false,true));$('restart').addEventListener('click',reset);$('voice').addEventListener('click',voice);$('readQuestion').addEventListener('click',()=>{if(!window.speechSynthesis){msg('Vorlesen ist in diesem Browser nicht verfügbar.',true);return}speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(state.question);u.lang='de-DE';u.rate=.91;speechSynthesis.speak(u)});
-window.__waldTest={parse,render,nextQuestion,normalize,fullText};$('imageName').value='Bild '+String(Math.floor(Math.random()*900)+100);reset();
+window.__waldTest={parse,render,nextQuestion,normalize,fullText,locate,scope,qty,color,dimension,treeSize};$('imageName').value='Bild '+String(Math.floor(Math.random()*900)+100);reset();
 })();
 </script>
 </body>
